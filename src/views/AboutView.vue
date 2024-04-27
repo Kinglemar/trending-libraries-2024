@@ -1,6 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const date = ref()
+</script>
 <template>
-  <main></main>
+  <main>
+    <VueDatePicker v-model="date"></VueDatePicker>
+  </main>
 </template>
 
 <style>

@@ -4,8 +4,9 @@ import { ref } from 'vue'
 const date = ref()
 </script>
 <template>
-  <main>
+  <main v-auto-animate>
     <VueDatePicker v-model="date"></VueDatePicker>
+    <p class="text-lg font-bold my-3">{{ date }}</p>
   </main>
 </template>
 
